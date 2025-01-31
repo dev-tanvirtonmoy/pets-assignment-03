@@ -39,6 +39,7 @@
               "pets-text": "#000000",
               "pets-btn": "#FFDC26",
               "pets-card-bg": "#F9DF8A",
+              "pets-border": "rgba(17, 17, 17, 0.10)",
             },
             fontFamily: {
               sora: ["Sora", "serif"],
@@ -51,7 +52,7 @@
   </head>
   <body class="">
     <!-- Header section start from here -->
-    <header class="bg-pets-bg">
+    <header class="bg-pets-bg overflow-x-hidden">
       <!-- Navbar part start from here -->
       <nav class="container mx-auto py-3 md:py-6 lg:py-8 font-sora">
         <div class="navbar">
@@ -119,95 +120,213 @@
     <!-- Header section end here -->
 
     <!-- Main part start from here -->
-    <main>
+    <main class="overflow-x-hidden font-sora">
       <!-- Categories section start from here -->
       <section class="container mx-auto my-12 md:my-20 lg:my-32">
         <!-- Section heading -->
-        <h2 class="text-2xl md:text-4xl font-adlam text-pets-text-color">Browse By Categories</h2>
+        <h2 class="text-2xl md:text-4xl font-adlam text-pets-text-color">
+          Browse By Categories
+        </h2>
 
         <!-- Categories card container -->
 
-         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4 lg:gap-6 mt-8 md:mt-12">
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4 lg:gap-6 mt-8 md:mt-12"
+        >
           <!-- Card 01 -->
-           <div class="bg-pets-card-bg py-8 px-12 rounded-xl hover:scale-110 hover:shadow-lg transition-all ease-linear duration-300">
+          <div
+            class="flex flex-col items-center bg-pets-card-bg py-8 px-12 rounded-xl hover:scale-110 hover:shadow-lg transition-all ease-linear duration-300"
+          >
             <!-- Card image -->
-            <figure class="w-[90px] h-[90px] lg:w-[100px] lg:h-[100px] flex items-center justify-center bg-white rounded-full mb-6 mx-auto">
-              <img class="" src="./assets/dog-cartoon.png" alt="">
+            <figure
+              class="w-24 h-24 flex items-center justify-center bg-white rounded-full mb-6"
+            >
+              <img class="" src="./assets/dog-cartoon.png" alt="" />
             </figure>
             <!-- Card content -->
-             <div class="text-center">
+            <div class="text-center">
               <h3 class="font-adlam capitalize text-pets-text mb-3">dog</h3>
               <p class="font-sora text-base text-pets-text">3 items</p>
-             </div>
-           </div>
+            </div>
+          </div>
 
           <!-- Card 02 -->
-           <div class="bg-pets-card-bg py-8 px-12 rounded-xl hover:scale-110 hover:shadow-lg transition-all ease-linear duration-300">
+          <div
+            class="bg-pets-card-bg py-8 px-12 rounded-xl hover:scale-110 hover:shadow-lg transition-all ease-linear duration-300"
+          >
             <!-- Card image -->
-            <figure class="w-[100px] h-[100px] flex items-center justify-center bg-white rounded-full mb-6 mx-auto">
-              <img class="" src="./assets/fish-cartoon.png" alt="">
+            <figure
+              class="w-24 h-24 flex items-center justify-center bg-white rounded-full mb-6 mx-auto"
+            >
+              <img class="" src="./assets/fish-cartoon.png" alt="" />
             </figure>
             <!-- Card content -->
-             <div class="text-center">
+            <div class="text-center">
               <h3 class="font-adlam capitalize text-pets-text mb-3">fish</h3>
               <p class="font-sora text-base text-pets-text">5 items</p>
-             </div>
-           </div>
+            </div>
+          </div>
 
           <!-- Card 03 -->
-           <div class="bg-pets-card-bg py-8 px-12 rounded-xl hover:scale-110 hover:shadow-lg transition-all ease-linear duration-300">
+          <div
+            class="bg-pets-card-bg py-8 px-12 rounded-xl hover:scale-110 hover:shadow-lg transition-all ease-linear duration-300"
+          >
             <!-- Card image -->
-            <figure class="w-[100px] h-[100px] flex items-center justify-center bg-white rounded-full mb-6 mx-auto">
-              <img class="" src="./assets/cat-cartoon.png" alt="">
+            <figure
+              class="w-24 h-24 flex items-center justify-center bg-white rounded-full mb-6 mx-auto"
+            >
+              <img class="" src="./assets/cat-cartoon.png" alt="" />
             </figure>
             <!-- Card content -->
-             <div class="text-center">
+            <div class="text-center">
               <h3 class="font-adlam capitalize text-pets-text mb-3">cat</h3>
               <p class="font-sora text-base text-pets-text">4 items</p>
-             </div>
-           </div>
+            </div>
+          </div>
 
           <!-- Card 04 -->
-           <div class="bg-pets-card-bg py-8 px-12 rounded-xl hover:scale-110 hover:shadow-lg transition-all ease-linear duration-300">
+          <div
+            class="bg-pets-card-bg py-8 px-12 rounded-xl hover:scale-110 hover:shadow-lg transition-all ease-linear duration-300"
+          >
             <!-- Card image -->
-            <figure class="w-[100px] h-[100px] flex items-center justify-center bg-white rounded-full mb-6 mx-auto">
-              <img class="" src="./assets/bird-cartoon.png" alt="">
+            <figure
+              class="w-24 h-24 flex items-center justify-center bg-white rounded-full mb-6 mx-auto"
+            >
+              <img class="" src="./assets/bird-cartoon.png" alt="" />
             </figure>
             <!-- Card content -->
-             <div class="text-center">
+            <div class="text-center">
               <h3 class="font-adlam capitalize text-pets-text mb-3">birds</h3>
               <p class="font-sora text-base text-pets-text">9 items</p>
-             </div>
-           </div>
+            </div>
+          </div>
 
           <!-- Card 05 -->
-           <div class="bg-pets-card-bg py-8 px-12 rounded-xl hover:scale-110 hover:shadow-lg transition-all ease-linear duration-300">
+          <div
+            class="bg-pets-card-bg py-8 px-12 rounded-xl hover:scale-110 hover:shadow-lg transition-all ease-linear duration-300"
+          >
             <!-- Card image -->
-            <figure class="w-[100px] h-[100px] flex items-center justify-center bg-white rounded-full mb-6 mx-auto">
-              <img class="" src="./assets/mouse-cartoon.png" alt="">
+            <figure
+              class="w-24 h-24 flex items-center justify-center bg-white rounded-full mb-6 mx-auto"
+            >
+              <img class="" src="./assets/mouse-cartoon.png" alt="" />
             </figure>
             <!-- Card content -->
-             <div class="text-center">
-              <h3 class="font-adlam capitalize text-pets-text mb-3">Small pet</h3>
+            <div class="text-center">
+              <h3 class="font-adlam capitalize text-pets-text mb-3">
+                Small pet
+              </h3>
               <p class="font-sora text-base text-pets-text">9 items</p>
-             </div>
-           </div>
+            </div>
+          </div>
 
           <!-- Card 06 -->
-           <div class="bg-pets-card-bg py-8 px-12 rounded-xl hover:scale-110 hover:shadow-lg transition-all ease-linear duration-300">
+          <div
+            class="bg-pets-card-bg py-8 px-12 rounded-xl hover:scale-110 hover:shadow-lg transition-all ease-linear duration-300"
+          >
             <!-- Card image -->
-            <figure class="w-[100px] h-[100px] flex items-center justify-center bg-white rounded-full mb-6 mx-auto">
-              <img class="" src="./assets/rabbit-cartoon.png" alt="">
+            <figure
+              class="w-24 h-24 flex items-center justify-center bg-white rounded-full mb-6 mx-auto"
+            >
+              <img class="" src="./assets/rabbit-cartoon.png" alt="" />
             </figure>
             <!-- Card content -->
-             <div class="text-center">
+            <div class="text-center">
               <h3 class="font-adlam capitalize text-pets-text mb-3">Rabbit</h3>
               <p class="font-sora text-base text-pets-text">5 items</p>
-             </div>
-           </div>
-         </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- Categories section end here -->
+
+      <!-- Trending Products section start from here -->
+      <section class="md:bg-pets-bg lg:py-32">
+        <div class="container mx-auto">
+          <!-- Section heading -->
+          <h2 class="text-2xl md:text-4xl font-adlam text-pets-text-color">
+            Browse By Categories
+          </h2>
+
+          <!-- Product card container -->
+          <div class="grid grid-cols-12 gap-6 mt-8 md:mt-12">
+            <!-- Big card -->
+            <div
+              class="col-span-12 lg:col-span-4 px-6 py-10 md:px-8 md:py-12 bg-pets-card-bg rounded-xl"
+            >
+              <h3 class="text-2xl md:text-3xl font-adlam text-pets-text">
+                T- Shirt For Dogs
+              </h3>
+              <p class="font-sora text-base text-pets-text-color my-5">
+                Make your dog look cute and comfy with our fun T-shirts—great
+                for walks, playtime, and photos!
+              </p>
+              <button
+                class="px-8 py-3 bg-white rounded-lg text-xl text-pets-text-color"
+              >
+                Shop Now
+              </button>
+
+              <div class="flex justify-end">
+                <img src="./assets/cute-pet-mid.png" alt="" />
+              </div>
+            </div>
+
+            <!-- Small card 01 -->
+            <div class="flex gap-4 p-4 bg-white col-span-6 md:col-span-3  rounded-lg border border-pets-border hover:rotate-3 hover:drop-shadow-lg transition-all ease-linear duration-300">
+              <!-- card image -->
+              <div class="p-5 bg-pets-bg rounded-lg">
+                <img src="./assets/dog-cartoon.png" alt="" />
+              </div>
+              <!-- card content -->
+               <div>
+                <!-- rating -->
+                 <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-star text-[#FFC107] text-[18px]"></i>
+                  <p class="text-base text-pets-text-color">4.5</p>
+                 </div>
+                 <h3 class="my-2 text-xl font-medium text-pets-text-color">Pet Bed</h3>
+                 <p class="text-base text-pets-text-color font-medium">$39.99</p>
+               </div>
+            </div>
+            <!-- Small card 01 -->
+            <div class="flex gap-4 p-4 bg-white col-span-6 md:col-span-3  rounded-lg border border-pets-border hover:rotate-3 hover:drop-shadow-lg transition-all ease-linear duration-300">
+              <!-- card image -->
+              <div class="p-5 bg-pets-bg rounded-lg">
+                <img src="./assets/dog-cartoon.png" alt="" />
+              </div>
+              <!-- card content -->
+               <div>
+                <!-- rating -->
+                 <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-star text-[#FFC107] text-[18px]"></i>
+                  <p class="text-base text-pets-text-color">4.5</p>
+                 </div>
+                 <h3 class="my-2 text-xl font-medium text-pets-text-color">Pet Bed</h3>
+                 <p class="text-base text-pets-text-color font-medium">$39.99</p>
+               </div>
+            </div>
+            <!-- Small card 01 -->
+            <div class="flex gap-4 p-4 bg-white col-span-6 md:col-span-3  rounded-lg border border-pets-border hover:rotate-3 hover:drop-shadow-lg transition-all ease-linear duration-300">
+              <!-- card image -->
+              <div class="p-5 bg-pets-bg rounded-lg">
+                <img src="./assets/dog-cartoon.png" alt="" />
+              </div>
+              <!-- card content -->
+               <div>
+                <!-- rating -->
+                 <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-star text-[#FFC107] text-[18px]"></i>
+                  <p class="text-base text-pets-text-color">4.5</p>
+                 </div>
+                 <h3 class="my-2 text-xl font-medium text-pets-text-color">Pet Bed</h3>
+                 <p class="text-base text-pets-text-color font-medium">$39.99</p>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Trending Products section end here -->
     </main>
     <!-- Main part end here -->
 
