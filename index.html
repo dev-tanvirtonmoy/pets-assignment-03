@@ -36,7 +36,9 @@
               clifford: "#da373d",
               "pets-bg": "#FFF9F4",
               "pets-text-color": "#111111",
+              "pets-text": "#000000",
               "pets-btn": "#FFDC26",
+              "pets-card-bg": "#F9DF8A",
             },
             fontFamily: {
               sora: ["Sora", "serif"],
@@ -47,14 +49,13 @@
       };
     </script>
   </head>
-  <body>
+  <body class="">
     <!-- Header section start from here -->
     <header class="bg-pets-bg">
       <!-- Navbar part start from here -->
       <nav class="container mx-auto py-3 md:py-6 lg:py-8 font-sora">
         <div class="navbar">
           <div class="navbar-start">
-            
             <a class="flex items-center gap-3">
               <img src="./assets/logo-header.png" alt="" />
               <p class="hidden md:block text-pets-text-color text-2xl">
@@ -70,7 +71,7 @@
             </ul>
           </div>
           <div class="navbar-end flex gap-4">
-            <!--  -->
+            <!-- Hamburger Icon -->
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                 <i class="fa-solid fa-bars text-2xl"></i>
@@ -84,19 +85,25 @@
                 <li><a>Contact us</a></li>
               </ul>
             </div>
+
             <!-- Icon container -->
-             <div class="hidden lg:flex gap-4">
-               <i class="fa-regular fa-bell text-2xl hover:scale-125 transition ease-in-out duration-300"></i>
-              <i class="fa-solid fa-magnifying-glass text-2xl hover:scale-125 transition ease-in-out duration-300"></i>
-             </div>
+            <div class="hidden lg:flex gap-4">
+              <i
+                class="fa-regular fa-bell text-2xl hover:scale-125 transition ease-in-out duration-300"
+              ></i>
+              <i
+                class="fa-solid fa-magnifying-glass text-2xl hover:scale-125 transition ease-in-out duration-300"
+              ></i>
+            </div>
+
             <!-- Button container -->
             <div class="hidden lg:flex gap-3">
               <a
-                class="py-3 px-8 border border-pets-btn text-pets-text-color text-xl cursor-pointer rounded-lg bg-transparent"
+                class="py-3 px-8 border border-pets-btn text-pets-text-color text-xl cursor-pointer rounded-lg bg-transparent hover:bg-pets-btn transition ease-in-out duration-300"
                 >Login</a
               >
               <a
-                class="bg-pets-btn border border-pets-btn py-3 px-8 text-pets-text-color text-xl cursor-pointer rounded-lg"
+                class="bg-pets-btn border border-pets-btn py-3 px-8 text-pets-text-color text-xl cursor-pointer rounded-lg hover:bg-neutral-400 transition ease-in-out duration-300"
                 >Register</a
               >
             </div>
@@ -104,11 +111,104 @@
         </div>
       </nav>
       <!-- Navbar part end here -->
+
+      <!-- Banner section start from here -->
+
+      <!-- Banner section end here -->
     </header>
     <!-- Header section end here -->
 
     <!-- Main part start from here -->
-    <main></main>
+    <main>
+      <!-- Categories section start from here -->
+      <section class="container mx-auto my-12 md:my-20 lg:my-32">
+        <!-- Section heading -->
+        <h2 class="text-2xl md:text-4xl font-adlam text-pets-text-color">Browse By Categories</h2>
+
+        <!-- Categories card container -->
+
+         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4 lg:gap-6 mt-8 md:mt-12">
+          <!-- Card 01 -->
+           <div class="bg-pets-card-bg py-8 px-12 rounded-xl hover:scale-110 hover:shadow-lg transition-all ease-linear duration-300">
+            <!-- Card image -->
+            <figure class="w-[90px] h-[90px] lg:w-[100px] lg:h-[100px] flex items-center justify-center bg-white rounded-full mb-6 mx-auto">
+              <img class="" src="./assets/dog-cartoon.png" alt="">
+            </figure>
+            <!-- Card content -->
+             <div class="text-center">
+              <h3 class="font-adlam capitalize text-pets-text mb-3">dog</h3>
+              <p class="font-sora text-base text-pets-text">3 items</p>
+             </div>
+           </div>
+
+          <!-- Card 02 -->
+           <div class="bg-pets-card-bg py-8 px-12 rounded-xl hover:scale-110 hover:shadow-lg transition-all ease-linear duration-300">
+            <!-- Card image -->
+            <figure class="w-[100px] h-[100px] flex items-center justify-center bg-white rounded-full mb-6 mx-auto">
+              <img class="" src="./assets/fish-cartoon.png" alt="">
+            </figure>
+            <!-- Card content -->
+             <div class="text-center">
+              <h3 class="font-adlam capitalize text-pets-text mb-3">fish</h3>
+              <p class="font-sora text-base text-pets-text">5 items</p>
+             </div>
+           </div>
+
+          <!-- Card 03 -->
+           <div class="bg-pets-card-bg py-8 px-12 rounded-xl hover:scale-110 hover:shadow-lg transition-all ease-linear duration-300">
+            <!-- Card image -->
+            <figure class="w-[100px] h-[100px] flex items-center justify-center bg-white rounded-full mb-6 mx-auto">
+              <img class="" src="./assets/cat-cartoon.png" alt="">
+            </figure>
+            <!-- Card content -->
+             <div class="text-center">
+              <h3 class="font-adlam capitalize text-pets-text mb-3">cat</h3>
+              <p class="font-sora text-base text-pets-text">4 items</p>
+             </div>
+           </div>
+
+          <!-- Card 04 -->
+           <div class="bg-pets-card-bg py-8 px-12 rounded-xl hover:scale-110 hover:shadow-lg transition-all ease-linear duration-300">
+            <!-- Card image -->
+            <figure class="w-[100px] h-[100px] flex items-center justify-center bg-white rounded-full mb-6 mx-auto">
+              <img class="" src="./assets/bird-cartoon.png" alt="">
+            </figure>
+            <!-- Card content -->
+             <div class="text-center">
+              <h3 class="font-adlam capitalize text-pets-text mb-3">birds</h3>
+              <p class="font-sora text-base text-pets-text">9 items</p>
+             </div>
+           </div>
+
+          <!-- Card 05 -->
+           <div class="bg-pets-card-bg py-8 px-12 rounded-xl hover:scale-110 hover:shadow-lg transition-all ease-linear duration-300">
+            <!-- Card image -->
+            <figure class="w-[100px] h-[100px] flex items-center justify-center bg-white rounded-full mb-6 mx-auto">
+              <img class="" src="./assets/mouse-cartoon.png" alt="">
+            </figure>
+            <!-- Card content -->
+             <div class="text-center">
+              <h3 class="font-adlam capitalize text-pets-text mb-3">Small pet</h3>
+              <p class="font-sora text-base text-pets-text">9 items</p>
+             </div>
+           </div>
+
+          <!-- Card 06 -->
+           <div class="bg-pets-card-bg py-8 px-12 rounded-xl hover:scale-110 hover:shadow-lg transition-all ease-linear duration-300">
+            <!-- Card image -->
+            <figure class="w-[100px] h-[100px] flex items-center justify-center bg-white rounded-full mb-6 mx-auto">
+              <img class="" src="./assets/rabbit-cartoon.png" alt="">
+            </figure>
+            <!-- Card content -->
+             <div class="text-center">
+              <h3 class="font-adlam capitalize text-pets-text mb-3">Rabbit</h3>
+              <p class="font-sora text-base text-pets-text">5 items</p>
+             </div>
+           </div>
+         </div>
+      </section>
+      <!-- Categories section end here -->
+    </main>
     <!-- Main part end here -->
 
     <!-- Footer part start from here -->
